@@ -1,12 +1,78 @@
-# React + Vite
+# 🔐 PassOP – Local Password Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack password manager app built with **React**, **Node.js**, and **MongoDB (Local)**. Save, edit, delete, and copy your passwords securely — all stored in your local MongoDB database.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React + Tailwind CSS + Toastify
+- **Backend:** Node.js + Express
+- **Database:** MongoDB (Local)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚙️ Setup Instructions
+
+### 🔙 Backend (Node.js + MongoDB Local)
+
+1. Ensure MongoDB is installed and running locally (`mongodb://localhost:27017`).
+
+2. Navigate to the backend folder:
+   ```bash
+   cd backend
+    ```
+
+3. Install backend dependencies:
+   ```bash
+   npm install
+   ```
+4. Create a .env file:
+
+   ```bash
+     MONGO_URI=mongodb://localhost:27017
+    ```
+5.Start the server:
+  ```bash
+     node index.js
+  ```
+
+## Server runs at http://localhost:3000
+### 💻 Frontend (React)
+1. Install frontend dependencies:
+ 
+   ```bash
+   npm install
+   ```
+2. Start the React app:
+    ```bash
+    npm run dev
+    ```
+### App runs at http://localhost:5173 or similar
+
+### ✅ Features
+1. Add a password (site, username, password)
+2. Edit an existing password
+3. Delete a password entry
+4. Copy password to clipboard
+5. Toast notifications for feedback
+6. Data stored in MongoDB locally
+
+### 📡 API Endpoints
+| Method   | URL | Description               |
+| -------- | --- | ------------------------- |
+| `GET`    | `/` | Fetch all saved passwords |
+| `POST`   | `/` | Save new password data    |
+| `DELETE` | `/` | Delete password by `id`   |
+
+
+
+### 🧪 Requirements
+1. Node.js & npm
+2. MongoDB installed and running locally
+3. React with Vite or CRA setup
+
+### 🧑‍💻 Author
+Built by PraveenRajput 
+### 📜 License
+MIT License
