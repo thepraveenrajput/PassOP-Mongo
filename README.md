@@ -1,4 +1,4 @@
-# 🔐 PassOP – Local Password Manager
+# 🔐 PassOP –  Password Manager
 
 A full-stack password manager app built with **React**, **Node.js**, and **MongoDB (Local)**. Save, edit, delete, and copy your passwords securely — all stored in your local MongoDB database.
 
